@@ -1,20 +1,67 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+<!--
+<app-layout>
+	<div class="row">
+		<div class="col-xs-12">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</app-layout>
+-->
+
+<!---------- HEADER ---------->
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-custom bg-primary">
+
+	<a class="navbar-brand" href="/"><i class="fa fa-home"></i> Josselin Dorso</a>
+	<button class="navbar-toggler d-lg-none" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navigation" [ngbCollapse]="isCollapsed">
+
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/cv"><i class="fa fa-file-text-o"></i> CV</a>
+			</li>
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/career"><i class="fa fa-line-chart"></i> Parcours</a>
+			</li>
+			<li class="nav-item" routerLinkActive="active">
+				<a class="nav-link" routerLink="/contact"><i class="fa fa-envelope-o"></i> Contact</a>
+			</li>
+		</ul>
+
+		<div class="navbar-expand ml-auto navbar-nav">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link" href="https://www.linkedin.com/in/josselin-dorso/" target="_blank">
+					<i class="fa fa-linkedin fa-2x bg-icon"></i>
+				</a>
+			</div>
+		</div>
+
+	</div>
+
+
+
+</nav>
+
+
+
+<!---------- BODY ---------->
+
+<router-outlet></router-outlet>
+
+
+<!---------- FOOTER ---------->
+
+<nav class="navbar navbar-dark navbar-custom bg-primary mt-5 fixed-bottom">
+	<div class="navbar-expand m-auto navbar-text">
+		Sitemap
+	</div>
+</nav>
+
+
+
 

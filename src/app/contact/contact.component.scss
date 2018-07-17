@@ -1,0 +1,74 @@
+
+form {
+	text-align: center;
+}
+
+
+.input, label {
+	display:inline-flex;
+}
+
+.input-group-prepend {
+}
+
+.input-group {
+	border: 0px!important;
+
+}
+
+.input {
+	margin: 0 auto;
+	width: 50%;
+	min-width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+}
+
+
+label {
+	font-weight: bold;
+	text-align: right;
+	margin-right: 2em;
+	width: 90px;
+}
+
+textarea {
+	height:200px;
+}
+
+button {
+	margin: auto;
+	display: block;
+}
+
+
+
+/* Add a background color and some padding around the form */
+.container {
+	border-style: solid;
+	border-color: #0395DE;
+	border-width: 1px;
+	border-radius: 5px;
+	background-color: #ebf4fb;
+	padding: 20px;
+}
+
+p {
+	float: left;
+}
+
+h4 {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 25px;
+	font-size: 1.714em;
+	line-height: 1.45em;
+	font-weight: 700;
+}
+
+#email {
+
+}
