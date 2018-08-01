@@ -30,13 +30,14 @@ form {
 
 label {
 	font-weight: bold;
+	width: 90px;
 	text-align: right;
 	margin-right: 2em;
-	width: 90px;
 }
 
 textarea {
 	height:200px;
+	vertical-align: top;
 }
 
 button {

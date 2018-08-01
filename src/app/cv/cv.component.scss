@@ -108,6 +108,17 @@ header figure img {
 	width: 150px;
 }
 
+header .download {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: -25px;
+}
+
+header .download button{
+	border-color: #0376b0;
+}
+
 
 
 /***************
@@ -128,6 +139,7 @@ section[role=main] h3 {
 	margin-top: 0px;
 	position: relative;
 }
+
 
 /*
 section[role=main] h3:after, h3:before {
@@ -171,10 +183,14 @@ section[role=main] .contact h3:after {
 	background-position: 11px -194px;
 }
 
+.apropos .domainList {
+	margin: 0;
+}
 
 .experiences ul, .formations ul {
 	margin-left: 60px;
 }
+
 
 section[role=main] h4 {
 	margin-bottom: 0px;
@@ -214,29 +230,59 @@ section[role=main] h4 strong {
 /************************************************
 /* Affichage des compétences sous forme de barres
 *************************************************/
-.competences .barres li {
-	margin-bottom: 21px;
-	position: relative;
+
+
+.competences img {
+	display: block;
+	margin: auto;
+	height: 300px;
+	width: 300px;
 }
 
-.competences .barres li:after {
-	background: #e1e1e1;
-	bottom: -4px;
-	content: ' ';
-	display: block;
-	height: 5px;
-	position: absolute;
-	width:100%;
+
+.lieu, .dates, .phone, .mail, .site {
+	padding-left: 25px;
+	margin: 0 10px 1px 10px;
 }
 
-.competences .barres li span {
-	background: #0395DE;
-	bottom: -4px;
-	content: ' ';
-	display: block;
-	height: 5px;
-	left: 0;
-	position: absolute;
-	width: inherit;
-	z-index: 1;
+.lieu {
+	background-position: 0 -2px;
+	color: #999;
+}
+
+.dates {
+	background-position: 0 -22px;
+	color: #999;
+}
+
+.phone {
+	background-position: 0 -40px;
+}
+
+.mail {
+	background-position: 0 -58px;
+}
+
+.site {
+	background-position: 0 -80px;
+}
+
+.form {
+	background-position: 0 -100px;
+}
+
+.twitter {
+	background-position: 0 -122px;
+}
+
+.facebook {
+	background-position: 0 -140px;
+}
+
+.dribbble {
+	background-position: 0 -160px;
+}
+
+.skype {
+	background-position: 0 -180px;
 }
